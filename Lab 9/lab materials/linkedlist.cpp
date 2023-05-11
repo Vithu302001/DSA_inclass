@@ -63,6 +63,19 @@ struct LinkedList{
                 temp = temp->link; 
             }
         }
+        
+        //incase we need to print every password for the same username that we inserted use this code block instead of above for loop block
+        /*for(int i=0;i<length;i++){
+            if(temp->user_name==user_name){
+                cout<<"Password: "<<temp->password<<"\n";
+                temp = temp->link;
+                //break;
+            }
+            else{
+                temp = temp->link; 
+            }
+        }
+        */  
     }
 
     void print_list(){
